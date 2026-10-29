@@ -31,7 +31,7 @@ public class SistemaSeguranca {
         usuariosCadastrados.add(usuario);
     }
 
-    public Usuario autenticar(String username, String senha) {
+    public Usuario autenticar(String username, String senha) { 
         for (Usuario usuario : usuariosCadastrados) {
             if (usuario.autenticar(username, senha)) {
                 return usuario;
